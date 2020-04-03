@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "lib": [ "ES2019" ],
+        "module": "commonjs",
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "outDir": "dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "types": [ "node" ],
+        "typeRoots": [ "node_modules/@types" ],
+        "rootDir": "./src",
+        "baseUrl": "../../",
+        "paths": {
+            "shared/*": [
+                "./shared/dist/*"
+            ],
+            "shared": [
+                "./shared/dist"
+            ],
+        }
+    },
+    "references": [
+        { "path": "../../shared" }
+    ],
+    "include": [
+        "src/**/*"
+    ]
+}

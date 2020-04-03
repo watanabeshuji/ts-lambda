@@ -1,0 +1,17 @@
+{
+    "main": "dist/index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "@types/node": "^12.12.5",
+        "aws-sdk": "^2.466.0",
+        "npm-run-all": "^4.1.5",
+        "rimraf": "^3.0.0",
+        "typescript": "^3.6.4"
+    },
+    "scripts": {
+        "clean": "rimraf dist/*",
+        "compile": "tsc -b",
+        "build": "npm-run-all clean compile",
+        "deploy": "sh ../../deploy.sh func2"
+    }
+}
